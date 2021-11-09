@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        body {
+
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url("motoboy-desfocado.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+
+        #login {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .card {
+
+            background-color: rgba(19, 19, 19, 0.658);
+            padding: 40px;
+            border-radius: 2px;
+            width:280px;
+            
+
+        }
+
+        .card-header {
+
+            padding-bottom: 50px;
+            opacity: 0.8;
+            color: #fff;
+
+        }
+
+        .campo {
+            font-size: 15px;
+        }
+
+        .card-header::after {
+
+            content: "";
+            width: 100px;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-top: -17px;
+            margin-left: -0px;
+
+        }
+
+        .card-content label {
+
+            color: #fff;
+            font-size: 15px;
+            opacity: 0.8;
+
+        }
+
+        .card-content-area {
+
+            display: flex;
+            flex-direction: column;
+            padding:10px 0;
+
+        }
+
+        .card-content-area input {
+
+            margin-top: 10px;
+            padding:4px 5px;
+            background-color: transparent;
+            border:none;
+            border-bottom: 1px solid #e1e1e1;
+            outline: none;
+            color: #fff;
+
+        }
+
+        .card-footer {
+
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+
+        .card-footer .submit{
+
+            width: 100%;
+            height: 40px;
+            background-color: #555454;
+            border:none;
+            color:#e1e1e1;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 15px;
+
+        }
+
+        .card-footer a {
+
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.8;
+            color: #fff;
+            text-decoration: none;
+
+        }
+        #submit:hover {
+        background-color: #00BFFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login">
+        <form class="card">
+            <div class="card-header">
+                <h1>Entrar</h1>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" class="campo" id="usuario" autocomplete="off" required>
+                </div>
+                <div class="card-content-area">
+                    <label for="password">Senha</label>
+                    <input type="password" class="campo" id="password" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" value="Entrar" class="submit" id="submit">
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

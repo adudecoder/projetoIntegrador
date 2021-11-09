@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Rapido</title>
+    <link rel="shortcut icon" href="img/logo-4.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/JQuery.js"></script>
+    <script src="https://kit.fontawesome.com/1d37f88c5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="img/logo-4.png" width="120" height="90">
+            </a>
+            <!-- Menu Icon -->
+            <div class="toggle"></div>
+
+
+            <!-- Menu -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="rankingmotoboy.html">Ranking</a>
+                    <!-- <span class="sale-lable">Sale</span> -->
+                </li>
+
+                <li><a href="#depo">Depoimentos</a></li>
+                
+                <li><a href="#apoio">Patrocinadores</a></li>
+
+                <li><a href="#contact">Sobre</a></li>
+
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <div class="right-menu">
+                <a href="javascript:void(0);" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="javascript:void(0);" class="user">
+                    <i class="fas fa-user"></i>
+                </a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buscador -->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="Pesquisar Produtos">
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- login -->
+    <div class="form">
+        
+        <!-- Login -->
+        <div class="login-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <strong>Entrar</strong>
+            <form>
+                <input type="email" placeholder="Exemplo@gmail.com" name="email" required>
+                <input type="password" placeholder="Senha" name="password" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="forget">Esqueceu sua Senha?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Cadastre-se</a>
+            </div>
+        </div>
+
+        <!-- Cadastro -->
+        <div class="sign-up-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <strong>Cadastro</strong>
+            <form>
+                <input type="text" placeholder="Nome Completo" name="fullname" required>
+                <input type="email" placeholder="Exemplo@gmail.com" name="email" required>
+                <input type="password" placeholder="Senha" name="password" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+            <div class="form-btns">
+                <a href="javascript:void(0);" class="already-acount">Já tem conta?</a>
+                
+            </div>
+        </div>
+    
+    </div>
+
+    <section class="layout-1">
+
+        <div class="text-company">
+            <h1 id="text1">Moto Rápido<small>Que tal, em sua próxima viagem de moto táxi utilizar nosso site<br>e
+                    resolver sua viagem com rápidez e segurança<br>
+                    tudo pela internet, tratando diretamente com o moto táxi<br>
+                    que você escolher, não é um máximo?</small></h1>
+        </div>
+
+        <div class="bonus">
+            <img src="img/Bonus-amvo-exclusivo.png" alt="bonus">
+            <h2>Bonificações para os melhores usúarios</h2>
+        </div>
+
+        <div class="container">
+
+            <form id="register">
+
+                <div class="text-login">
+                    <h2>INSCREVA-SE PARA PILOTAR</h2>
+                </div>
+
+                <div>
+                    <input type="nome" placeholder="Nome Completo" required>
+                </div>
+
+                <div>
+                    <input type="e-mail" placeholder="E-mail" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div>
+                    <input type="fone" placeholder="Telefone" required>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Senha" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div>
+                    <input type="city" placeholder="Cidade" required>
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div>
+                    <select name="estado" id="uf">
+                        <option value="0">Estado</option>
+                        <optgroup label="Norte">
+                            <option value="1">Acre</option>
+                            <option value="2">Amazonas</option>
+                            <option value="3">Amapá</option>
+                            <option value="4">Pará</option>
+                            <option value="5">Rondônia</option>
+                            <option value="6">Roraima</option>
+                            <option value="7">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="8">Alagoas</option>
+                            <option value="9">Bahia</option>
+                            <option value="10">Ceará</option>
+                            <option value="11">Maranhão</option>
+                            <option value="12">Piauí</option>
+                            <option value="13">Pernambuco</option>
+                            <option value="14">Paraíba</option>
+                            <option value="15">Rio Grande do Norte</option>
+                            <option value="16">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="17">Goiás</option>
+                            <option value="18">Mato Grosso</option>
+                            <option value="19">Mato Grosso do Sul</option>
+                            <option value="20">Distrito Federal</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="21">Espirito Santo</option>
+                            <option value="22">Minas Gerais</option>
+                            <option value="23">Rio de Janeiro</option>
+                            <option value="24">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="25">Paraná</option>
+                            <option value="26">Rio Grande do Sul</option>
+                            <option value="27">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">CADASTRAR</button>
+                </div>
+
+                <div>
+                    <label for="text">Já possui uma conta?</label>
+                    <a href="entrar.html">Entrar</a>
+                </div>
+
+            </form>
+
+            <p id="termos">Ao acessar e usar os Serviços você concorda com os presentes termos e condições, que estabelecem o
+                relacionamento<br>contratual entre você, na qualidade de usuário(a), e a Moto Rápido. Se você não
+                concorda com
+                estes Termos, você não pode acessar nem<br>usar os Serviços. Mediante referido acesso e uso, estes
+                Termos
+                imediatamente encerram, substituem e superam todos os<br>acordos, Termos e acertos anteriores entre você
+                e
+                qualquer Afiliada da Moto Rápido. A Moto Rápido poderá imediatamente encerrar estes<br>Termos ou
+                quaisquer Serviços em
+                relação a você ou, de modo geral, deixar de oferecer ou negar acesso aos Serviços ou a<br>qualquer parte
+                deles, a qualquer momento e por qualquer motivo. Li e entendo a <a href="#" id="previce">Declaraçao de
+                    privacidade do piloto</a>
+            </p>
+
+            <label class="check-box">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+        </div>
+
+        <div id="banner"></div>
+
+
+    </section>
+    
+
+    
+    <section class="grid">
+
+            <h2 id="carousel-rate">Ranking de Moto Táxi</h2>
+            <hr>
+            
+            <div class="owl-carousel owl-theme">
+                <div class="items"><img src="img/jackiechan.jpg" alt="jackiechan">
+                    <h2>Jackie Chan</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="ranking.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            <div class="items"><img src="img/jaiminho.jpg" alt="jaiminho">
+                <h2>Jaiminho Carteiro</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="jaiminhoranking.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            <div class="items"><img src="img/jimcarry.jpg" alt="jimcarry">
+                <h2>Charlie</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="ranking1.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            <div class="items"><img src="img/johntravolta.jpg" alt="johntravolta">
+                <h2>Woody Stevens</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="johntravoltaranking.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            <div class="items"><img src="img/mr bean.jpg" alt="mrbean">
+                <h2>Mr. Bean</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="beanranking.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            <div class="items"><img src="img/stalone.jpg" alt="stalone">
+                <h2>John Rambo</h2>
+                <span>Avalie seu Moto Táxista</span><br>
+                <a href="staloneranking.html"><button type="submit" id="btn">Avaliar</button></a>
+                </div>
+            </div>
+
+            <section class="new-arrival">
+                <!-- Heading -->
+                <div class="arrival-heading">
+        
+                    <!-- <strong>Novos Itens</strong>
+                    <p>Nós fornecemos os melhores itens com qualidade e segurança.</p> -->
+                    <h2 id="carousel-rate">Novos Itens</h2>
+                    <hr>
+        
+                </div>
+        
+                <!-- produto container -->
+                <div class="product-container">
+        
+                    <!-- Produto Box 1 -->
+                    
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/alavanca-de-embreagem-2" target="_blank">
+                                <img src="img/item-1.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/alavanca-de-embreagem-2" class="p-name" target="_blank">Alavanca de Embreagem</a>
+                            <span class="p-price">R$ 57,18</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 2 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/pneu-9090-19-mc-52p-dianteiro" target="_blank">
+                            <img src="img/item-2.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/pneu-9090-19-mc-52p-dianteiro" class="p-name" target="_blank">Pneu 90/90-19 M/C 52P Dianteiro</a>
+                            <span class="p-price">R$ 285,04</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 3 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/oleo-pro-honda-10w30-1l" target="_blank">
+                            <img src="img/item-3.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/oleo-pro-honda-10w30-1l" class="p-name" target="_blank">Óleo Pro Honda 10W30 1L</a>
+                            <span class="p-price">R$ 44,82</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 4 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/bateria-dtz5-12v-4ah" target="_blank">
+                            <img src="img/item-4.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/bateria-dtz5-12v-4ah" class="p-name" target="_blank">Bateria DTZ5 12V 4Ah</a>
+                            <span class="p-price">R$ 339,85</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 5 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/espelho-retrovisor-direito-4" target="_blank">
+                            <img src="img/item-5.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/espelho-retrovisor-direito-4" class="p-name" target="_blank">Espelho Retrovisor Direito</a>
+                            <span class="p-price">R$ 82,05</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 6 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                            <a href="https://www.honda.com.br/pecas/motos/produto/sinaleira-traseira-direita-3" target="_blank">
+                            <img src="img/item-6.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/sinaleira-traseira-direita-3" class="p-name" target="_blank">Sinaleira Traseira Direita</a>
+                            <span class="p-price">R$ 76,28</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 7 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/pastilha-de-freio-traseiro-0" target="_blank">
+                            <img src="img/item-7.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/pastilha-de-freio-traseiro-0" class="p-name" target="_blank">Pastilha de Freio Traseiro</a>
+                            <span class="p-price">R$ 102,33</span>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Produto Box 8 -->
+                    <div class="product-box"> 
+        
+                        <!-- Img -->
+                        <div class="product-img">
+                            <!-- Colocar no Carrinho -->
+                        
+                            <a href="https://www.honda.com.br/pecas/motos/produto/elemento-do-filtro-de-ar-3" target="_blank">
+                                <img src="img/item-8.jpg">
+                            </a>
+                        </div>
+        
+        
+                        <!-- Detalhes -->
+                        <div class="product-details">
+                            <a href="https://www.honda.com.br/pecas/motos/produto/elemento-do-filtro-de-ar-3" class="p-name" target="_blank">Elemento do Filtro de Ar</a>
+                            <span class="p-price">R$ 27,97</span>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+        
+            </section>
+
+            <a name="depo"></a>
+            <h2 id="carousel-depo">Depoimentos dos nossos usúarios</h2>
+        <hr>
+        <main class="carousel">
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <img src="img/WhatsApp Image 2021-10-06 at 11.22.26 AM.jpeg" alt="depoimento1">
+                    <h3>Victor MotoBoy</h3>
+                    <span>Ótima empresa com enormes possibilidades de crescimento um universo imenso a ser explorado.
+                        Benefícios básicos ofertados, mas por ser uma empresa a frente das demais acredito que poderiam
+                        rever essa politica. No mais ótima empresa para se trabalhar particularmente não aceitaria uma
+                        nova
+                        oportunidade em uma outra área.</span>
+                </div>
+                <div class="item">
+                    <img src="img/iuri.jpg" alt="depoimento2">
+                    <h3>Gutemberg Iuri</h3>
+                    <span>Gostaria de agradecer imensamente o serviço prestado. Fiquei extremamente satisfeito com a
+                        empresa e o transporte.
+                        O piloto foi excelente de educação, cordialidade e competência fantástica.
+                        Com certeza, indicarei a Moto Rápido para outras pessoas.</span>
+                </div>
+                <div class="item">
+                    <img src="img/joao.jpg" alt="depoimento3">
+                    <h3>João Paulo</h3>
+                    <span>Parabéns pelo atendimento, especialmente pela cortesia, cuidados e dedicação do piloto Victor.
+                        A Moto Rápido nos propiciou a oportunidade de um dia tranquilo e agradável por seu
+                        atendimento.</span>
+                </div>
+                <div class="item">
+                    <img src="img/thiago.jpeg" alt="depoimento4">
+                    <h3>Thiago Mota</h3>
+                    <span>Atendimento ótimo, continuem sempre assim.
+                        Obrigada!</span>
+                </div>
+                <div class="item">
+                    <img src="img/taciara.jpeg" alt="depoimento5">
+                    <h3>Taciara Alves</h3>
+                    <span>Só elogios e agradecimentos pelo serviço prestado!
+                        Com certeza serão contatados em outras ocasiões!</span>
+                </div>
+                <div class="item">
+                    <img src="img/poderoso.jpg" alt="depoimento6">
+                    <h3>Poderoso Castiga</h3>
+                    <span>Mais ou menos mais ou menos.</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jhonata.jpeg" alt="depoimento7">
+                    <h3>Jhonatha Ruan</h3>
+                    <span>Fiz uma ótima viagem e o Victor, que foi meu Moto Táxi, está de parabéns. Não tenhp
+                        dúvidas que, assim que precisarmos de outras viagens fecharemos com vocês novamente.</span>
+                </div>
+
+            </div>
+
+            
+            
+            <a name="apoio"></a>
+            <section id="sponser">
+
+                <h2 class="text-sponser">APOIADORES</h2>
+                <hr>
+
+                <div>
+                    <a href="https://www.shell.com.br/" target="_blank"><img class="item" src="img/shell.png" alt="shell"></a>
+                    <a href="https://www.honda.com.br/motos/" target="_blank"><img class="item" src="img/honda.png" alt="honda"></a>
+                    <a href="https://portal.ipiranga/wps/portal/ipiranga/inicio" target="_blank"><img class="item" src="img/ipiranga.png" alt="ipiranga"></a>
+                </div>
+                <div>
+                    <a href="https://ciamotos.com.br/" target="_blank"><img class="item" src="img/oficina2.jpg" alt="oficina2"></a>
+                    <a href="https://www3.yamaha-motor.com.br/" target="_blank"><img class="item" src="img/yamaha.png" alt="yamaha"></a>
+                    <a href="https://www.facebook.com/pdasmotos/" target="_blank"><img class="item" src="img/oficina1.jpg" alt="oficina1"></a>
+                </div>
+                <div>
+                    <a href="https://www.ifood.com.br/" target="_blank"><img class="item" src="img/ifood.jpg" alt="ifood"></a>
+                    <a href="https://www.ubereats.com/br" target="_blank"><img class="item" src="img/ubereats.jpg" alt="ubereats"></a>
+                    <a href="https://www.pirelli.com/tyres/pt-br/carro/homepage" target="_blank"><img class="item" src="img/pirelli2.jpg" alt="pirelli"></a>
+                </div>
+
+
+            </section>
+
+        </main>
+    </section>
+
+    
+    <footer class="footer-pag">
+        <a name="contact"></a>
+
+        <div class="footer-colunn">
+            <h3>Moto Rápido</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Site Institucional">Site Institucional</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Fale Conosco">Fale Conosco</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Cadastre seu Negócio">Cadastre seu Negócio</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Ranking Moto Táxi">Ranking Moto Táxi</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-colunn2">
+            <h3>Produtos</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Viaje">Viaje</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Pilotar">Pilotar</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Faça Entregas">Faça Entregas</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="Moto para Empresas">Moto para Empresas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-colunn3">
+            <h3>Rede Sociais</h3>
+            <hr>
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="#" target="_blank" title="Facebook">Facebook</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <a href="#" target="_blank" title="Twitter">Twitter</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fab fa-instagram-square"></i>
+                    <a href="#" target="_blank" title="Instagram">Instagram</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="#" target="_blank" title="Linkedin">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-colunn4">
+            <h3>Moto Rápido Technologies Inc. | Moto Rápido do Brasil Tecnologia Ltda<br>| Avenida Conselheiro Aguiar, nº
+            301, Sala 1501, 15º<br>andar, Centro, Recife/PE - CEP 06010-067 | CNPJ:<br>17.555.999/0002-98</h3>
+        </div>
+
+        <div class="get-in-on">
+            <img src="img/oie_transparent.png" alt="getiton">
+        </div>
+
+        <div class="copy-right">
+            <p>Copyright © Moto Rápido 2021. All rights reserved.</p>
+            <div class="termos-privacidade">
+                <ul>
+                    <li><a href="termos.html">Privacidade</a></li>
+                    <li><a href="termos.html">Termos</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script type="text/javascript">
+        // Search bar
+        $(document).on('click','.search',function(){
+            $('.search-bar').addClass('search-bar-active')
+        });
+    
+        $(document).on('click','.search-cancel',function(){
+            $('.search-bar').removeClass('search-bar-active')
+        });
+    
+        // Entrar e Cadastro
+        $(document).on('click','.user,.already-acount',function(){
+            $('.form').addClass('login-active').removeClass('sign-up-active')
+        });
+    
+        $(document).on('click','.sign-up-btn',function(){
+            $('.form').addClass('sign-up-active').removeClass('login-active')
+        });
+    
+        
+        
+        $(document).on('click','.form-cancel',function(){
+            $('.form').removeClass('login-active').removeClass('sign-up-active')
+        });
+    </script>    
+    
+    
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
