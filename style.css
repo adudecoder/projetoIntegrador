@@ -10,6 +10,10 @@ body {
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #subir {
     background-color: rgba(0, 0, 0, 0.576);
     color: white;
