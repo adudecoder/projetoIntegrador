@@ -51,12 +51,8 @@
             </ul>
 
             <div class="right-menu">
-                <a href="javascript:void(0);" class="search">
-                    <i class="fas fa-search"></i>
-                </a>
-                <a href="javascript:void(0);" class="user">
-                    <i class="fas fa-user"></i>
-                </a>
+                
+                <a href="entrar.html" id="entrar">Entrar</a>
                 
             </div>
         </div>
@@ -139,30 +135,30 @@
                 </div>
 
                 <div>
-                    <input type="nome" name="nome" placeholder="Nome Completo" value="Victor Martins" required>
+                    <input type="nome" name="nome" placeholder="Nome Completo" required>
                 </div>
 
                 <div>
                     <input type="e-mail" name="email" placeholder="E-mail" required>
-                    <i class="fas fa-envelope"></i>
+                    <!-- <i class="fas fa-envelope"></i> -->
                 </div>
 
                 <div>
                     <input type="fone" name="telefone" placeholder="Telefone" required>
-                    <i class="fas fa-mobile-alt"></i>
+                    <!-- <i class="fas fa-mobile-alt"></i> -->
                 </div>
 
                 <div>
                     <input type="password" name="senha" placeholder="Senha" required>
-                    <i class="fas fa-lock"></i>
+                    <!-- <i class="fas fa-lock"></i> -->
                 </div>
 
                 <div>
                     <input type="city" name="cidade" placeholder="Cidade" required>
-                    <i class="fas fa-search"></i>
+                    <!-- <i class="fas fa-search"></i> -->
                 </div>
 
-                <div>
+                <!-- <div>
                     <select name="estado" id="uf">
                         <option value="0">Estado</option>
                         <optgroup label="Norte">
@@ -203,10 +199,10 @@
                             <option value="27">Santa Catarina</option>
                         </optgroup>
                     </select>
-                </div>
+                </div> -->
 
                 <div>
-                    <button type="submit">CADASTRAR</button>
+                    <button id="cadastrar" type="submit">CADASTRAR</button>
                 </div>
 
                 <div>
@@ -215,7 +211,7 @@
                 </div>
 
             </form>
-
+            
             <p id="termos">Ao acessar e usar os Serviços você concorda com os presentes termos e condições, que estabelecem o
                 relacionamento<br>contratual entre você, na qualidade de usuário(a), e a Moto Rápido. Se você não
                 concorda com
@@ -486,8 +482,8 @@
                         oportunidade em uma outra área.</span>
                 </div>
                 <div class="item">
-                    <img src="img/iuri.jpg" alt="depoimento2">
-                    <h3>Gutemberg Iuri</h3>
+                    <img src="/img/diogodefante.jfif" alt="depoimento2">
+                    <h3>Diogo Defante</h3>
                     <span>Gostaria de agradecer imensamente o serviço prestado. Fiquei extremamente satisfeito com a
                         empresa e o transporte.
                         O piloto foi excelente de educação, cordialidade e competência fantástica.
@@ -681,6 +677,24 @@
         $(document).on('click','.form-cancel',function(){
             $('.form').removeClass('login-active').removeClass('sign-up-active')
         });
+
+                // for fix
+        $(window).scroll(function(){
+            if($(document).scrollTop() > 50){
+                $('.navigation').addClass('fix-nav');
+            }
+            else{
+                $('.navigation').removeClass('fix-nav');
+            } 
+        });   
+
+        // Responsive Menu
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.navigation').toggleClass('active')
+            })
+        })
     </script>    
     
     
